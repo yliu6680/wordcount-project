@@ -1,0 +1,8 @@
+<H1>Word count</H1>
+
+<form action="{% url 'count' %}"> <!-- braces and percentage symbol could add url in it-->
+	<textarea cols="40" rows="5" name="fulltext"></textarea>
+	<br>
+	<input type="submit" value="Count!" name="submit"/>
+</form>
+<a href="{% url 'about' %}"><button>About page</button></a>

@@ -1,0 +1,16 @@
+<h1>There are {{ count }} words in your text</h1>
+
+<a href="{% url 'home' %}"><button>Start Again</button></a>
+
+<h1>Original:</h1>
+<!--the double braces could get the value of the corresponded key of the input dictionary-->
+{{ fulltext }}
+
+<h1>Word Count:</h1>
+
+<!---->
+{% for word, counttotal in sortted_list %}
+
+<h2><pre>{{ word }}: {{ counttotal }}</pre></h2>
+
+{% endfor %}
