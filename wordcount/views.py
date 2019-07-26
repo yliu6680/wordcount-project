@@ -1,6 +1,6 @@
 # HttpResponse function could return the content as html format
 from django.http import HttpResponse
-# 
+#  
 from django.shortcuts import render
 from operator import itemgetter
 
